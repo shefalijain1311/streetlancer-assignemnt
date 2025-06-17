@@ -102,7 +102,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-200 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
           <p className="text-gray-500 text-sm">
-            © 2024 Streelancer. All rights reserved.
+            Made by Shefali Jain
           </p>
           <div className="flex space-x-6 text-sm">
             <a href="#" className="text-gray-500 hover:text-purple-600 transition-colors">
