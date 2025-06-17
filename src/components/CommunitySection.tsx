@@ -55,12 +55,13 @@ const CommunitySection = () => {
           {/* Right Content - Illustration */}
           <div className="relative">
             <div className="bg-gradient-to-br from-purple-400 to-purple-500 rounded-3xl p-8 relative overflow-hidden">
-              <div className="bg-white/10 rounded-2xl p-6 h-64 flex items-center justify-center">
-                <div className="text-center text-white">
-                  <Users className="w-16 h-16 mx-auto mb-4 opacity-80" />
-                  <p className="text-sm opacity-80">Community Illustration</p>
-                </div>
-              </div>
+              <div className="bg-white/10 rounded-2xl p-6 h-64 flex items-center justify-center overflow-hidden">
+      <img 
+        src="/img2.jpg" 
+        alt="Community Illustration" 
+        className="w-full h-full object-cover rounded-xl"
+      />
+    </div>
               
               {/* Floating Elements */}
               <div className="absolute top-4 right-4 w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
