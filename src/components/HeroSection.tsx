@@ -70,10 +70,11 @@ const HeroSection = () => {
             <div className="relative z-10 bg-gradient-to-br from-coral-400 to-coral-500 rounded-3xl p-8 transform rotate-3 hover:rotate-1 transition-transform duration-300">
               <div className="bg-white rounded-2xl p-6 transform -rotate-3">
                 <div className="flex items-center justify-center h-64 bg-gray-100 rounded-xl">
-                  <Laptop className="w-16 h-16 text-gray-400" />
-                </div>
-                <div className="mt-4 text-center text-gray-600">
-                  Professional Woman with Laptop
+                  <img 
+          src="/img1.jpg" 
+          alt="Professional Woman with Laptop" 
+          className="w-full h-full object-cover rounded-xl"
+        />
                 </div>
               </div>
             </div>
