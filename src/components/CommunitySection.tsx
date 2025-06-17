@@ -57,7 +57,7 @@ const CommunitySection = () => {
             <div className="bg-gradient-to-br from-purple-400 to-purple-500 rounded-3xl p-8 relative overflow-hidden">
               <div className="bg-white/10 rounded-2xl p-6 h-64 flex items-center justify-center overflow-hidden">
       <img 
-        src="/img2.jpg" 
+        src="/img2.avif" 
         alt="Community Illustration" 
         className="w-full h-full object-cover rounded-xl"
       />
