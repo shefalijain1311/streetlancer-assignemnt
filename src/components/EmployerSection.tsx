@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { CheckCircle, Users, BarChart3, Shield } from 'lucide-react';
 
@@ -88,9 +89,11 @@ const EmployerSection = () => {
                   </div>
                 </div>
 
-                <Button className="bg-white text-coral-500 hover:bg-gray-100 font-semibold">
-                  Hire Now
-                </Button>
+                <Link to="/marketplace">
+                  <Button className="bg-white text-coral-500 hover:bg-gray-100 font-semibold w-full">
+                    Hire Now
+                  </Button>
+                </Link>
               </div>
 
               {/* Decorative Elements */}

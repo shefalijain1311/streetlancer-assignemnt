@@ -2,6 +2,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Heart, Star, Users, Zap, Shield } from 'lucide-react';
+import { AuthModal } from '@/components/auth/AuthModals';
 
 const UserCategoriesSection = () => {
   const categories = [
@@ -75,11 +76,13 @@ const UserCategoriesSection = () => {
                   </p>
                 </div>
 
-                <Button 
-                  className={`bg-gradient-to-r ${category.color} text-white hover:opacity-90 transition-opacity`}
-                >
-                  Register Now
-                </Button>
+                <AuthModal type="signup">
+                  <Button 
+                    className={`bg-gradient-to-r ${category.color} text-white hover:opacity-90 transition-opacity w-full`}
+                  >
+                    Register Now
+                  </Button>
+                </AuthModal>
               </div>
 
               {/* Image Placeholder */}

@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { BookOpen, Briefcase, Users, TrendingUp } from 'lucide-react';
 
@@ -101,12 +102,14 @@ const ServicesSection = () => {
                   ))}
                 </ul>
 
-                <Button 
-                  variant="outline" 
-                  className="border-gray-300 text-gray-700 hover:bg-gray-50 group-hover:border-purple-500 group-hover:text-purple-600 transition-colors"
-                >
-                  {service.buttonText}
-                </Button>
+                <Link to={service.title === 'Academy' ? '/academy' : service.title === 'Marketplace' ? '/marketplace' : '/about'}>
+                  <Button 
+                    variant="outline" 
+                    className="border-gray-300 text-gray-700 hover:bg-gray-50 group-hover:border-purple-500 group-hover:text-purple-600 transition-colors w-full"
+                  >
+                    {service.buttonText}
+                  </Button>
+                </Link>
               </div>
 
               {/* Background placeholder for image */}

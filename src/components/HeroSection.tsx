@@ -1,7 +1,9 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Check, Laptop, Settings, Users } from 'lucide-react';
+import { AuthModal } from '@/components/auth/AuthModals';
 
 const HeroSection = () => {
   return (
@@ -26,19 +28,23 @@ const HeroSection = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 text-lg font-semibold rounded-lg"
-                size="lg"
-              >
-                Register Now
-              </Button>
-              <Button 
-                variant="outline" 
-                className="border-purple-600 text-purple-600 hover:bg-purple-50 px-8 py-3 text-lg font-semibold rounded-lg"
-                size="lg"
-              >
-                Join Academy
-              </Button>
+              <AuthModal type="signup">
+                <Button 
+                  className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 text-lg font-semibold rounded-lg"
+                  size="lg"
+                >
+                  Register Now
+                </Button>
+              </AuthModal>
+              <Link to="/academy">
+                <Button 
+                  variant="outline" 
+                  className="border-purple-600 text-purple-600 hover:bg-purple-50 px-8 py-3 text-lg font-semibold rounded-lg w-full"
+                  size="lg"
+                >
+                  Join Academy
+                </Button>
+              </Link>
             </div>
 
             {/* Features List */}

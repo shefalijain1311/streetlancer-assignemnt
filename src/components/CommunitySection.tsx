@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Users, MessageCircle, Heart } from 'lucide-react';
 
@@ -19,12 +20,14 @@ const CommunitySection = () => {
               </p>
             </div>
 
-            <Button 
-              className="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-8 py-3 rounded-lg"
-              size="lg"
-            >
-              Join Community
-            </Button>
+            <Link to="/community">
+              <Button 
+                className="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-8 py-3 rounded-lg w-full"
+                size="lg"
+              >
+                Join Community
+              </Button>
+            </Link>
 
             {/* Community Stats */}
             <div className="grid grid-cols-3 gap-6 pt-8">
