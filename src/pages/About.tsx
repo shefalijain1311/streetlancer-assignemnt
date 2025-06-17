@@ -38,7 +38,7 @@ const About = () => {
       role: 'Founder & CEO',
       bio: 'Passionate about creating inclusive workplaces and empowering women in their career journeys.',
       image: 'SJ',
-      linkedin: '#'
+      linkedin: 'https://www.linkedin.com/in/shefali-jain-2a8157221/'
     },
     {
       name: 'Priya Sharma',
