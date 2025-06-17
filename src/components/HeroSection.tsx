@@ -65,28 +65,29 @@ const HeroSection = () => {
           </div>
 
           {/* Right Content - Hero Image Area */}
-          <div className="relative">
-            {/* Placeholder for woman with laptop image */}
-            <div className="relative z-10 bg-gradient-to-br from-coral-400 to-coral-500 rounded-3xl p-8 transform rotate-3 hover:rotate-1 transition-transform duration-300">
-              <div className="bg-white rounded-2xl p-6 transform -rotate-3">
-                <div className="flex items-center justify-center h-64 bg-gray-100 rounded-xl">
-                  <img 
+<div className="relative">
+  {/* Woman with laptop image */}
+  <div className="relative z-10 bg-gradient-to-br from-coral-400 to-coral-500 rounded-3xl p-8 transform rotate-3 hover:rotate-1 transition-all duration-500 shadow-2xl hover:shadow-3xl">
+    <div className="bg-white rounded-2xl p-6 transform -rotate-3 shadow-inner">
+      <div className="relative overflow-hidden h-64 bg-gray-100 rounded-xl group">
+        <img 
           src="/img1.jpg" 
           alt="Professional Woman with Laptop" 
-          className="w-full h-full object-cover rounded-xl"
+          className="w-full h-full object-cover rounded-xl transition-transform duration-700 group-hover:scale-110 filter brightness-105 contrast-105"
         />
-                </div>
-              </div>
-            </div>
-            
-            {/* Floating Icons */}
-            <div className="absolute top-10 -left-4 bg-white p-3 rounded-full shadow-lg animate-bounce">
-              <Settings className="w-6 h-6 text-purple-600" />
-            </div>
-            <div className="absolute bottom-10 -right-4 bg-white p-3 rounded-full shadow-lg animate-pulse">
-              <Users className="w-6 h-6 text-coral-500" />
-            </div>
-          </div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
+      </div>
+    </div>
+  </div>
+  
+  {/* Floating Icons */}
+  <div className="absolute top-10 -left-4 bg-white p-3 rounded-full shadow-lg animate-bounce hover:animate-none transition-all duration-300 hover:shadow-xl hover:scale-110">
+    <Settings className="w-6 h-6 text-purple-600" />
+  </div>
+  <div className="absolute bottom-10 -right-4 bg-white p-3 rounded-full shadow-lg animate-pulse hover:animate-none transition-all duration-300 hover:shadow-xl hover:scale-110">
+    <Users className="w-6 h-6 text-coral-500" />
+  </div>
+</div>
         </div>
       </div>
     </section>
